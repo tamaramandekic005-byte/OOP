@@ -1,3 +1,5 @@
+#ifndef CONTAINER_H
+#define CONTAINER_H
 #include<iostream>
 
 class container {
@@ -7,7 +9,7 @@ private:
 	size_t cap;
 
 public:
-	container(size_t initial_capacity = 0);
+	container(size_t kapacitet = 0);
 	container(const container& other);
 	container(container&& other);
 	~container();
@@ -23,3 +25,4 @@ public:
 
 };
 
+#endif
